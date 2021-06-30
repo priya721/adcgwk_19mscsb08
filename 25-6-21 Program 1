@@ -1,0 +1,16 @@
+class Bitwise
+{
+public static void main(String[] args)
+{
+int x=16;
+if((x&1)!=0)
+System.out.print("odd");
+else	
+System.out.print("even");
+}
+}
+-----------------------------------------------------------------------------------------------------------------------
+Output:
+ javac Bitwise.java
+ java Bitwise
+ even
