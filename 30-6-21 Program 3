@@ -1,0 +1,27 @@
+class Solution {
+    public int subtractProductAndSum(int n) {
+ 
+        int mul = 1;
+        int sum = 0;
+        int temp;
+        int diff;
+
+        while(n != 0)
+        {
+            temp = n % 10;
+            n /= 10;
+            mul *= temp;
+            sum += temp;
+        }
+        diff = mul - sum;
+        return diff;
+    }      
+    }
+----------------------------------------------------------------------------------------------------------------------------
+Output:
+Your input
+234
+Output
+15
+Expected
+15
